@@ -1,7 +1,7 @@
 #treeMarkET - Forest Tree Species Marker Extraction Tool 
 ===
 
-**beechMarkET** is a command-line wraper designed for extracting high quality SNPs from the forest tree species. 
+**treeMarkET** is a command-line wraper designed for extracting high quality SNPs from the forest tree species. 
 
 ===
 
@@ -11,11 +11,11 @@
 
 **Option #1** (recommended)
 
-If you use [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) you can install **beechMarkET** pre-requisited programs by running the following commands in your terminal:
+If you use [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) you can install **treeMarkET** pre-requisited programs by running the following commands in your terminal:
 ```
 conda config --add channels bioconda
-conda create --name beechmarket
-conda activate beechmarket
+conda create --name treeMarkET
+conda activate treeMarkET
 conda install -c bioconda trimmomatic samtools bcftools=1.15.1 bwa
 ```
 
@@ -39,22 +39,22 @@ You can also use independatly install the following programs:
 
 Download the wraper from this repository by:
 ```
-git clone https://github.com/ulaszewski/beechMarkET.git
+git clone https://github.com/ulaszewski/treeMarkET.git
 ```
 and
 ```
-cd beechMarkET
-chmod +x beechmarket
+cd treeMarkET
+chmod +x treeMarkET
 ```
 
 # Running the pipeline
 Follow the installation instructions, run the script as shown below and answer the prompt questions
 ```
-./beechmarket
+./treeMarkET
 ```
 # Output
 
-_beechMarkET_ provides the user with several output files:
+_treeMarkET_ provides the user with several output files:
 - clean fastq files
 - mapped, filtered and indexed bam files
 - raw and filtered maker files in *.bcf format
